@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f0f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #d63384; /* Dark Pink */
+}
+
+.character-display {
+    margin: 20px 0;
+}
+
+.character-display img {
+    width: 200px;
+    height: auto;
+}
+
+.controls, .color-picker {
+    margin-top: 20px;
+}
+
+.size-button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #d63384; /* Dark Pink */
+    border-radius: 5px;
+    background-color: #f8d7e0; /* Light Pink */
+    color: #6f42c1; /* Purple */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.size-button:hover {
+    background-color: #6f42c1; /* Purple */
+    color: white;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-picker h2 {
+    margin-bottom: 10px;
+    color: #d63384; /* Dark Pink */
+}
+
+#skinColorPicker {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
