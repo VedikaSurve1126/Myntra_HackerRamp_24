@@ -1,0 +1,54 @@
+html:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Canvas for Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        canvas {
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Canvas for Clothing</h1>
+        <textarea id="clothingDescription" rows="4" cols="50" placeholder="Enter clothing description..."></textarea>
+        <br>
+        <button onclick="generateClothing()">Generate Clothing</button>
+        <canvas id="clothingCanvas" width="500" height="500"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
